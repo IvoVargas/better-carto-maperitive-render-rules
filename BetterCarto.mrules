@@ -1,6 +1,6 @@
 // Better Carto Maperitive Render Rules (https://github.com/IvoVargas/better-carto-maperitive-render-rules)
 // Maperitive rules, similar to OpenStreetMap mapnik style, in CartoCSS.
-// Version 0.0 29.06.2019
+// Version 0.1 30.06.2019
 //
 //
 // Modified by Ivo Vargas
@@ -209,7 +209,7 @@ properties
 	map-background-color	: #F1EEE8
 	fill-hatch-color : #F1EEE8
 	map-background-opacity	: 1
-	map-sea-color : #B5D0D0
+	map-sea-color : #AAD3DF
 	font-weight : bold
 	font-family : Verdana
 	text-max-width : 7
@@ -450,11 +450,11 @@ rules
 		if : forest
 			define
 				min-zoom : 8.5
-				fill-color : #8DC56C
+				fill-color : #ADD19E
 		elseif : scrub 
 			define
 				min-zoom : 8.5
-				fill-color : #b0d080
+				fill-color : #C8D7AB
 		elseif : beach
 			define
 				min-zoom : 10
@@ -501,11 +501,10 @@ rules
 				fill-color : #CFECA8
 		elseif : nature reserve
 			define
-				fill-color : #ABDE96
-				fill-hatch : nwse
-				fill-hatch-opacity : 0
-				line-color : #ABDE96
+				fill-opacity : 0
+				line-color : #AFD0A8
 				line-style : solid
+				line-width : 2
 		elseif : tidalflat
 			define
 				fill-color : #ddbb00
@@ -916,29 +915,29 @@ rules
 					line-width : 7:1;12:3;13:5;16:7;18:12;19:24
 			else
 				define
-					line-width : 7:1;9:2;12:3;13:7;16:10;18:17;19:34
+					line-width : 11:1.5;12:1.5;15:7;18:12;19:24
 			define
 				min-zoom : 7
-				line-color : #EA7D54
+				line-color : #E892A2
 				border-style : solid
-				border-color : #EA7D54 black 20%
-				border-width : 15%
+				border-color : #DF4578
+				border-width : 5%
 			for : tunnel=yes
 				define
 					border-style : dot
-					line-color : #ecc08c
+					line-color : #F1BCC6
 			for : bridge
 				define
 					border-color : #000
-					border-width : 15%
+					border-width : 5%
 					line-start-cap : none
 					line-end-cap : none
 			draw : line
 			for : highway=motorway
 				define
 					min-zoom : 12
-					line-width : 7:0.3;12:1;13:1.5;16:1.7;18:3;19:6
-					line-color : #F5E756
+					line-width : 11:1.5;12:1.5;15:7;18:12;19:24
+					line-color : #E892A2
 				draw : line
 			define
 				min-zoom : 7
@@ -987,15 +986,15 @@ rules
 		elseif : *trunk*
 			define
 				min-zoom : 11
-				line-color : #E17171
-				line-width : 11:2;12:2;15:10;18:17;19:34
+				line-color : #F9B29C
+				line-width : 11:1.5;12:1.5;15:7;18:12;19:24
 				border-style : solid
-				border-color : #E17171 black 20%
-				border-width : 15%
+				border-color : #CB583B
+				border-width : 5%
 			for : oneway=yes
 				define
 					line-width : 11:1.5;12:1.5;15:7;18:12;19:24
-					border-width : 22%
+					border-width : 5%
 			for : tunnel=yes
 				define
 					border-style : dot
@@ -1003,7 +1002,7 @@ rules
 			for : bridge
 				define
 					border-color : #000
-					border-width : 15%
+					border-width : 5%
 			draw : line
 			define
 				min-zoom : 7
@@ -1043,15 +1042,15 @@ rules
 		elseif : *primary*
 			define
 				min-zoom : 11
-				line-width : 11:2;12:2;15:10;18:17;19:34
-				line-color : #f89293
+				line-width : 11:1.5;12:1.5;15:7;18:12;19:24
+				line-color : #FCD6A4
 				border-style : solid
-				border-color : #ECA2A3 black 20%
-				border-width : 15%
+				border-color : #BC8C33
+				border-width : 5%
 			for : oneway=yes
 				define
 					line-width : 11:1.5;12:1.5;15:7;18:12;19:24
-					border-width : 22%
+					border-width : 5%
 			for : tunnel=yes
 				define
 					border-style : dot
@@ -1059,7 +1058,7 @@ rules
 			for : bridge
 				define
 					border-color : #000
-					border-width : 15%
+					border-width : 5%
 			draw : line
 			define
 				min-zoom : 7
@@ -1101,15 +1100,15 @@ rules
 		elseif : *secondary*
 			define
 				min-zoom : 12
-				line-color : #FDD684
-				line-width : 11:2;12:2;15:10;18:17;19:34
+				line-color : #F7FABF
+				line-width : 11:1.5;12:1.5;15:7;18:12;19:24
 				border-style : solid
-				border-color : #CAA36F
-				border-width : 15%
+				border-color : #7A8614
+				border-width : 5%
 			for : oneway=yes
 				define
 					line-width : 11:1.5;12:1.5;15:7;18:12;19:24
-					border-width : 22%
+					border-width : 5%
 			for : @isMatch (surface,"unpaved|gravel|sand|earth|ground|grass")
 				define
 					border-style: dash 
@@ -1120,7 +1119,7 @@ rules
 			for : bridge
 				define
 					border-color : #000
-					border-width : 15%
+					border-width : 5%
 			draw : line
 			define
 				min-zoom : 8.5
@@ -1160,15 +1159,15 @@ rules
 		elseif : *tertiary
 			define
 				min-zoom : 13
-				line-color : #FEFEB2
-				line-width : 9:1;13:2;15:10;18:15;19:30
+				line-color : #FFF
+				line-width : 11:1.5;12:1.5;15:7;18:12;19:24
 				border-style : solid
-				border-color : #FEFEB2 black 20%
-				border-width : 15%
+				border-color : #A8A7A6
+				border-width : 5%
 			for : oneway=yes
 				define
-					line-width : 10:1;12:1.5;15:7;18:10;19:21
-					border-width : 25%
+					line-width : 11:1.5;12:1.5;15:7;18:12;19:24
+					border-width : 5%
 			for : @isMatch (surface,"unpaved|gravel|sand|earth|ground|grass")
 				define
 					border-style: dash 
