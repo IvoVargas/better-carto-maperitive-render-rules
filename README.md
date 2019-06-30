@@ -1,7 +1,7 @@
 Better Carto Maperitive Render Rules
 ==============================
 
-Rule set for [Maperitive}(http://maperitive.net/), similar to OpenStreetMap mapnik style, in CartoCSS.
+Rule set for Maperitive(http://maperitive.net/), similar to OpenStreetMap mapnik style, in CartoCSS.
 
 ![Preview](bettercarto-screenshot.png?raw=true "Preview")
 
@@ -21,6 +21,6 @@ Rule set for [Maperitive}(http://maperitive.net/), similar to OpenStreetMap mapn
 Rules based on default rendering rules for Maperitive
 http://maperitive.net, created by Igor Brejc, Updated by Michael <quelbs_at_gmail.com>
 Modified by Ole Nielsen
-[Better mapnik}(https://wiki.openstreetmap.org/wiki/User:Polderrunner/Maperitive_rules/Better_mapnik)
+Better mapnik(https://wiki.openstreetmap.org/wiki/User:Polderrunner/Maperitive_rules/Better_mapnik)
 
 Released under the Creative Commons Attribution-ShareAlike 3.0 License (http://creativecommons.org/licenses/by-sa/3.0/)
