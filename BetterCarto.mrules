@@ -1,6 +1,6 @@
 // Better Carto Maperitive Render Rules (https://github.com/IvoVargas/better-carto-maperitive-render-rules)
 // Maperitive rules, similar to OpenStreetMap mapnik style, in CartoCSS.
-// Version 0.1 30.06.2019
+// Version 0.2 30.06.2019
 //
 //
 // Modified by Ivo Vargas
@@ -131,7 +131,7 @@ features
 		highway trunk link: highway=trunk_link
 		highway primary link : highway=primary_link
 		highway primary : highway=primary
-		highway secondary : highway=secondary
+		highway secondary : highway=secondary OR highway=secondary_link
 		highway tertiary : highway=tertiary
 		highway unclassified : highway=unclassified
 		highway residential : highway=residential
