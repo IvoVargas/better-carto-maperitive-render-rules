@@ -364,7 +364,7 @@ rules
 		define
 			min-zoom : 12
 			line-style : none
-			fill-color : #F6EEB7
+			fill-color : #EEEEEE
 		draw : fill
 		define
 			min-zoom : 15
@@ -374,9 +374,9 @@ rules
 		define
 			min-zoom : 12
 			line-width : 1
-			line-color : #666666
+			line-color : #BDAEA2
 			line-style : none
-			fill-color : #BCA9A9
+			fill-color : #D9D0C9
 		for : building=greenhouse
 			define
 				fill-color : #99bbcc
@@ -490,7 +490,7 @@ rules
 		elseif : grass
 			define
 				min-zoom : 9
-				fill-color : #CFECA8
+				fill-color : #CDEBB0
 		elseif : allotments
 			define
 				min-zoom : 11
@@ -498,7 +498,7 @@ rules
 		elseif : meadow
 			define
 				min-zoom : 9
-				fill-color : #CFECA8
+				fill-color : #CDEBB0
 		elseif : nature reserve
 			define
 				fill-opacity : 0
@@ -516,11 +516,11 @@ rules
 		elseif : park
 			define
 				min-zoom : 10
-				fill-color : #C0F6B0
+				fill-color : #C8FACC
 		elseif : leisure garden
 			define
 				min-zoom : 13
-				fill-color : #CFECA8
+				fill-color : #CDEBB0
 		elseif : cemetary
 			define
 				min-zoom : 12
@@ -539,7 +539,7 @@ rules
 				fill-color : #74DCBA
 		elseif : village green
 			define
-				fill-color : #CFECA8
+				fill-color : #CDEBB0
 		elseif : landuse retail
 			define
 				fill-color : #F0D9D9
@@ -732,7 +732,7 @@ rules
 		define
 			min-zoom : 15
 			shape : custom
-			shape-def : pw:2;p:red;m:-1,-1;l:1,1;m:1,-1;l:-1,1
+			shape-def : pw:2;p:#4D4D4D;m:-1,-1;l:1,1;m:1,-1;l:-1,1
 			shape-size : 14:7;20:12
 			line-width : 1
 		draw : shape
@@ -892,11 +892,12 @@ rules
 			define
 				min-zoom : 15
 				shape : custom
-				shape-def : 60,0,20,-40,20,-15,-60,-15,-60,15,20,15,20,40;Z
+				shape-def : 60,0,10,-40,10,-8,-60,-8,-60,8,10,8,10,40;Z
 				shape-size : 12
 				shape-aspect : 0.75
-				shape-spacing : 10
-				fill-color : #6C70D4
+				shape-spacing : 22
+				fill-color : #000
+				fill-opacity : 0.9
 				line-style : none
 			for : oneway=-1
 				define
@@ -1243,11 +1244,11 @@ rules
 				line-style : solid
 				border-style : solid
 				border-color : white black 25%
-				border-width : 15%
+				border-width : 7%
 			for : (oneway=yes) OR (lanes<2) OR (width<3)
 				define
-					line-width : 13:1;15:4;18:10;19:20
-					border-width : 25%
+					line-width : 13:1;15:4;18:13;19:20
+					border-width : 10%
 			for : @isMatch (surface,"unpaved|gravel|sand|earth|ground|grass")
 				define
 					border-style: dash 
@@ -1491,8 +1492,8 @@ rules
 
 	target : river
 		define
-			line-color : #B5D0D0
-			line-width : 7:1;12:2;14:5
+			line-color : #AAD3DF
+			line-width : 7:1;12:2;14:10
 		draw : line
 		define
 			min-zoom:13
