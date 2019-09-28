@@ -453,8 +453,13 @@ rules
 				fill-color : #ADD19E
 		elseif : scrub 
 			define
+				min-zoom : 13
+				fill-color : #D9E3C5
+			draw : fill
+			define
 				min-zoom : 8.5
-				fill-color : #C8D7AB
+				max-zoom : 13
+				fill-color : #E0E9D0
 		elseif : beach
 			define
 				min-zoom : 10
@@ -1047,11 +1052,11 @@ rules
 				line-color : #FCD6A4
 				border-style : solid
 				border-color : #BC8C33
-				border-width : 5%
+				border-width : 8%
 			for : oneway=yes
 				define
 					line-width : 11:1.5;12:1.5;15:7;18:12;19:24
-					border-width : 5%
+					border-width : 8%
 			for : tunnel=yes
 				define
 					border-style : dot
@@ -1101,7 +1106,7 @@ rules
 		elseif : *secondary*
 			define
 				min-zoom : 12
-				line-color : #F7FABF
+				line-color : white black 25%
 				line-width : 11:1.5;12:1.5;15:7;18:12;19:24
 				border-style : solid
 				border-color : #7A8614
@@ -1265,7 +1270,7 @@ rules
 				max-zoom : 20
 			draw : text
 			define
-				min-zoom : 10
+				min-zoom : 12
 				max-zoom : 13
 				border-style : none
 				line-color : white black 25%
